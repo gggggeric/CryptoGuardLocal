@@ -1,0 +1,239 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #181C14; /* Navbar background color */
+    padding: 15px 30px; /* Increased padding for a larger navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    border-radius: 8px; /* Add rounded corners */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-logo {
+    color: white; /* Logo text color */
+    font-size: 28px; /* Increased font size for logo */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.navbar-logo:hover {
+    color: #61dafb; /* Logo color change on hover */
+}
+
+.navbar-menu {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Display menu items in a row */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar-item {
+    margin-left: 30px; /* Increased spacing between items */
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increased font size for links */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.navbar-links:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    color: #61dafb; /* Change link color on hover */
+}
+
+.font-size-slider {
+    margin-left: 10px;
+    width: 100px;
+}
+
+.navbar-links {
+    font-size: var(--base-font-size);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px; /* Reduced padding on smaller screens */
+    }
+    .navbar-item {
+        margin-left: 15px; /* Adjusted margin on smaller screens */
+    }
+    .navbar-links {
+        font-size: 18px; /* Slightly smaller font size for links */
+    }
+}
+
+.notification-dropdown {
+    position: absolute;
+    background-color: #181C14;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    right: 0; /* Align dropdown to the right */
+    min-width: 200px; /* Set a minimum width */
+}
+
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.notification-item:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+.clear-notifications {
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+.clear-notifications:hover {
+    text-decoration: underline;
+}
+
+.notification {
+    position: relative;
+}
+
+.notification-bubble {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Breadcrumbs styling */
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+
+.breadcrumbs a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+    color: #f0f0f0;
+}
+
+.breadcrumbs span {
+    color: white;
+}
+
+/* Separator style */
+.breadcrumbs span::before {
+    content: '>';
+    margin: 0 8px;
+    color: #ccc; /* Slightly lighter than white for contrast */
+}
+
+/* Notification bubble styling */
+.notification {
+    position: relative;
+}
+
+.notification-bubble {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content p {
+    font-size: 18px;
+    color: #333;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-buttons button:hover {
+    background-color: #0056b3;
+}
+/* Example in your CSS */
+body {
+    font-size: var(--base-font-size, 16px); /* Default is 16px */
+}
+
+.settings-dropdown hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}

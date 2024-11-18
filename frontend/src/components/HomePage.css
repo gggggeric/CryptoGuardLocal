@@ -1,0 +1,32 @@
+.homepage {
+    background-color: #3C3D37; /* Background color */
+    color: white; /* Text color */
+    text-align: center; /* Centered text */
+    padding: 100px 20px; /* Padding around the content */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Column direction */
+    justify-content: center; /* Center vertically */
+}
+
+.homepage h1 {
+    margin-bottom: 20px; /* Margin below the heading */
+}
+
+.homepage button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.homepage button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+html, body {
+    height: 100%; /* Set height to 100% */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
